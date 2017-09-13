@@ -1,11 +1,3 @@
-export function setYear(year) {
-    return {
-        type: 'SET_YEAR',
-        payload: year,
-        fetching: false
-    }
-}
-
 export function getPhotos(year) {
 
   return (dispatch) => {
