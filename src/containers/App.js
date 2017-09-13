@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux'
 import User from '../components/User'
 import Page from '../components/Page'
 import * as PageActions from '../actions/PageActions'
+import Table from '../components/Table';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
       <div>
         <User name={user.name} />
         <Page year={page.year} photos={page.photos} getPhotos={ getPhotos } fetching={page.fetching} />
+        <Table />
       </div>
     )
   }
